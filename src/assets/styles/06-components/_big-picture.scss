@@ -16,12 +16,16 @@
     border-bottom: 1px solid $web-detail;
   }
 
-  @media (min-width: $maxSMobileWidth) {
-    padding-inline: 4rem;
+  @media (min-width: $maxLMobileWidth) {
+    padding-inline: 6rem;
   }
 
   @media (min-width: $maxTabletWidth) {
     padding-inline: 8rem;
+  }
+
+  @media (min-width: $maxMSDesktopWidth) {
+    padding-inline: 10rem;
   }
 
   &__container {

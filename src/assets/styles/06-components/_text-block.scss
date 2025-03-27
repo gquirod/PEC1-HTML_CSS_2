@@ -6,12 +6,16 @@
   padding: 2rem;
   line-height: 1.5;
 
-  @media (min-width: $maxSMobileWidth) {
-    padding-inline: 4rem;
+  @media (min-width: $maxLMobileWidth) {
+    padding-inline: 6rem;
   }
 
   @media (min-width: $maxTabletWidth) {
     padding-inline: 8rem;
+  }
+
+  @media (min-width: $maxMSDesktopWidth) {
+    padding-inline: 10rem;
   }
 
   &__title {
@@ -27,13 +31,18 @@
   }
 
   &__title-list {
+    font-family: $font-family-sans-serif-title;
     margin-top: 2rem;
     font-weight: bold;
   }
 
   &__list {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-inline: 3rem;
+
     @media (min-width: $maxTabletWidth) {
-      padding-inline: 3rem;
+      padding-inline: 3.5rem;
     }
   }
 

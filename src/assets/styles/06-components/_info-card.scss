@@ -8,18 +8,21 @@
   line-height: 1.5;
   @include boxShadowStyle($color: $web-detail);
 
-  @media (min-width: $maxSMobileWidth) {
-    margin-inline: 4rem;
+  @media (min-width: $maxLMobileWidth) {
+    margin-inline: 6rem;
   }
 
   @media (min-width: $maxTabletWidth) {
     margin-inline: 8rem;
   }
+
+  @media (min-width: $maxMSDesktopWidth) {
+    margin-inline: 10rem;
+  }
   
   &__title {
     font-family: $font-family-sans-serif-title;
-    line-height: 1;
-    font-size: $medium-font-size;
+    font-size: $base-font-size;
     margin-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 3px dotted $web-detail;
