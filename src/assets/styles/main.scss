@@ -4,10 +4,14 @@
  */
 
 /**
- * Import variables
+ * Import variables, functions, mixins, generic templates and elements.
  */
 
-@import "variables";
+@import "01-settings/settings";
+@import "02-tools/tools";
+@import "03-generic/generic";
+@import "04-elements/elements";
+@import "05-objects/objects";
 
 /**
  * Import npm dependencies
@@ -17,13 +21,25 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
-
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 /**
- * Import layouts
+ * Import components
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+// @import "06-components/home";
+@import "06-components/header";
+
+@import "06-components/section-title";
+
+@import "06-components/big-picture";
+
+@import "06-components/text-block";
+
+@import "06-components/info-card";
+
+
+
 
 /**
  * Do NOT include anything else in this file!

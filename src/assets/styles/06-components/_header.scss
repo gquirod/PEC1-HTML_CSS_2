@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header{
+    
+  &__menu-button {
+    position: absolute;    
+    left: 2rem;
+    font-size: $bigger-font-size;
+  }
+    
+  &__logo {
+    max-width: 200px;
+    
+    @media (min-width: $maxSMobileWidth) {
+      max-width: 250px;
+    }
+  }
+}

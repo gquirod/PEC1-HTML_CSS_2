@@ -1,0 +1,83 @@
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #BODY
+\*------------------------------------*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-serif-body;
+  font-size: $base-font-size;
+  text-align: start;
+  line-height: 24px;
+  background-color: $web-background;
+  color: $web-detail;
+
+  @media (min-width: $maxTabletWidth) {
+    font-size: changeFontSize($base-font-size, 1.2);
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  background-color: $web-main;
+  border-bottom: 2px solid $web-detail;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+main {
+  display: flex;
+  flex-flow: column;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: $web-main;
+
+  @media (min-width: $maxSMobileWidth) {
+    justify-content: flex-start;
+  }
+}
+
+
+
+
+

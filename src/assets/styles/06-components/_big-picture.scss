@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  #BIG-PICTURE
+\*------------------------------------*/
+
+.big-picture {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background-color: $web-lighter-main;
+
+  @media (min-width: $maxSMobileWidth) {
+    border-bottom: 1px solid $web-detail;
+  }
+
+  @media (min-width: $maxSMobileWidth) {
+    padding-inline: 4rem;
+  }
+
+  @media (min-width: $maxTabletWidth) {
+    padding-inline: 8rem;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;    
+  }
+
+  &__container-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  } 
+  
+  &__container-image--darker {
+    filter: brightness(90%) contrast(70%);
+  }
+
+  &__caption {
+    width: 100%;
+    font-size: $small-font-size;
+    background-color: $web-background;
+    padding: .5rem 2rem;
+    border-bottom: 1px solid black;
+    line-height: 1.5;
+
+    @media (min-width: $maxSMobileWidth) {
+      border-left: 1px solid black;
+      border-right: 1px solid black
+    }
+
+    @media (min-width: $maxTabletWidth) {
+      font-size: changeFontSize($small-font-size, 1.4)
+    }
+  }
+}

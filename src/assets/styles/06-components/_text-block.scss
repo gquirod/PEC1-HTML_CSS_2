@@ -1,0 +1,44 @@
+/*------------------------------------*\
+  #TEXT-BLOCK
+\*------------------------------------*/
+
+.text-block {
+  padding: 2rem;
+  line-height: 1.5;
+
+  @media (min-width: $maxSMobileWidth) {
+    padding-inline: 4rem;
+  }
+
+  @media (min-width: $maxTabletWidth) {
+    padding-inline: 8rem;
+  }
+
+  &__title {
+    line-height: 1;
+    font-family: $font-family-sans-serif-title;
+    font-size: changeFontSize($bigger-font-size, 1.4);
+    margin-top: 1rem;
+  }
+
+  &__title--bottom-border {
+    padding-bottom: 1rem;
+    border-bottom: 4px solid $web-detail;
+  }
+
+  &__title-list {
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+
+  &__list {
+    @media (min-width: $maxTabletWidth) {
+      padding-inline: 3rem;
+    }
+  }
+
+  &__list--box-shadow{
+    @include boxShadowStyle($color: $web-detail, $radius: 0);
+  }
+}
+

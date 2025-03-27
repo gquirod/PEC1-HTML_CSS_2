@@ -1,0 +1,10 @@
+/*------------------------------------*\
+  #SECTION-TITLE
+\*------------------------------------*/
+
+.section-title {
+  padding-inline: 2rem;
+  border-bottom: 2px solid $web-detail;
+  font-family: $font-family-sans-serif-title;
+  font-size: changeFontSize($bigger-font-size, 0.75);
+}

@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  #INFO-CARD
+\*------------------------------------*/
+
+.info-card {
+  margin-inline: 2rem;
+  padding: 2rem;
+  line-height: 1.5;
+  @include boxShadowStyle($color: $web-detail);
+
+  @media (min-width: $maxSMobileWidth) {
+    margin-inline: 4rem;
+  }
+
+  @media (min-width: $maxTabletWidth) {
+    margin-inline: 8rem;
+  }
+  
+  &__title {
+    font-family: $font-family-sans-serif-title;
+    line-height: 1;
+    font-size: $medium-font-size;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px dotted $web-detail;
+  }
+}
+  
+  

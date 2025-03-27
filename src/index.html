@@ -8,20 +8,61 @@
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <div class="uoc-container">
+    <header>
+      <i class="fa-solid fa-bars header__menu-button"></i>
       <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+        <source srcset="./assets/images/recipe-logo.png?as=webp&width=450" type="image/webp" />
+        <img src="./assets/images/recipe-logo.png?width=450" alt="Recetas de la huerta" class="header__logo" />
       </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
+    </header>
+    <main>
+      <div class="section-title">
+        <h2>Destacado</h2>
+      </div>
+      <div class="content">
+        <figure class="big-picture">
+          <picture class="big-picture__container">
+            <source srcset="./assets/images/spinachs.jpg?as=webP" type="image/webp"/>
+          <img class="big-picture__container-image big-picture__container-image--darker" src="./assets/images/spinachs.jpg"  alt="Foto de espinacas con garbanzos, plato típico andaluz">
+        </picture>
+        <figcaption class="big-picture__caption">Aguilar, D. (2010) Espinacas con garbanzos. Flickr. https://www.flickr.com/photos/dacmail/5036200166</figcaption>
+        </figure>
+        <div class="text-block">
+          <h2 class="text-block__title text-block__title--bottom-border">Espinacas con Garbanzos</h2>
+          <p class="text-block__description">De las recetas más sencillas y completas de la cocina tradicional andaluza, las espinacas con garbanzos podrán convertirse sin duda en uno de los platos que incorporar a tu menú semanal.</p>
+          <p class="text-block__description">Con origen en el tradicional plato andalusí del periodo de vigilia, según comentan en este artículo de <a href="https://elpais.com/elpais/2020/07/17/eps/1595000752_578681.html">"El País"</a> (Escudero, M. (2020)), nos encontramos ante un plato vegano en que las especias cobran un gran protagonismo para dar lugar a un sabor inconfundible.
+          </p>
+          <p class="text-block__title-list">Los ingredientes serían:</p>
+          <ul class="text-block__list">
+            <li>4 dientes de ajo.</li>
+            <li>600 gramos de espinacas.</li>
+            <li>300 gramos de garbanzos ya preparados.</li>
+            <li>Una rebanada de pan (puede ser integral).</li>
+            <li>3 cucharadas de comino.</li>
+            <li>6 cucharadas de pimentón de la vera.</li>
+            <li>1 cucharada de sal.</li>
+          </ul>
+          <p class="text-block__title-list">Y la receta:</p>
+          <ol class="text-block__list text-block__list--box-shadow">
+            <li>Freímos en la sartén los dientes de ajo con un poco de aceite, y cuando se empiecen a dorar, tostamos el pan en la misma sartén.</li>
+            <li>Apartamos el pan con los dientes de ajo y lo trituramos a mano en un mortero.</li>
+            <li>En la misma sartén, echamos poco a poco las espinacas ya lavadas y las removemos en la sartén hasta que se cocinen. Mientras removemos las espinacas, echamos el pimentón y el comino para que se mezclen bien.</li>
+            <li>Cuando las espinacas estén ya cocinadas, echamos los garbanzos y un poco de sal, removemos para que se mezclen bien. Mientras se juntan los sabores, echamos la mezcla de ajo con pan que apartamos en el primer paso</li>
+            <li>¡Tu plato está listo! Puedes tomarlo acompañado de una rebanada de pan o, si quieres, un huevo frito para ponerlo encima ¡A disfrutar!</li>
+          </ol>
+        </div>
+        <div class="info-card">
+          <h2 class="info-card__title">Micro Consejo</h2>
+          <p>Si quieres que tu plato quede un poco más caldoso, prueba a echar un vaso o dos de agua mientras se cocinan las espinacas. Puedes también usar un poco de caldo de verduras reducido con el agua, pero no te pases o te podría quedar un guiso muy líquido.</p>
+        </div>
+        <i class="fa-solid fa-seedling centered-single-block"></i>
+      </div> 
+    </main>
+    <footer>
+      &copy; Guillermo Quintanilla Rodrigo
+    </footer>
+
+    <!-- <include src="./views/footer.html"></include> -->
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

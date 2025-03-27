@@ -1,0 +1,27 @@
+/*------------------------------------*\
+  #TOOLS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #MIXINS
+\*------------------------------------*/
+
+@mixin boxShadowStyle($color: $web-detail, $radius: 2rem) {
+  padding: 2rem;
+  border-radius: $radius;
+  box-shadow: 2px 2px 5px 3px rgba($color, .15);
+};
+
+
+
+
+
+/*------------------------------------*\
+  #FUNCTIONS
+\*------------------------------------*/
+
+@function changeFontSize($font-size, $multiplier) {
+  @return $font-size * $multiplier
+};
+
+
